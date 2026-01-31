@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise Solutions | Ranasinghe Infra</title>
+    <title>Enterprise Digital Solutions | Ranasinghe Foundry</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #020617; color: #f8fafc; }
         .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); }
         .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .feature-card { border: 1px solid rgba(56, 189, 248, 0.1); transition: all 0.3s ease; }
-        .feature-card:hover { border-color: #38bdf8; background: rgba(56, 189, 248, 0.05); }
+        .feature-card:hover { border-color: #38bdf8; background: rgba(56, 189, 248, 0.05); transform: translateY(-5px); }
+        .review-logo { filter: grayscale(1) brightness(2); opacity: 0.6; transition: 0.3s; }
+        .review-logo:hover { filter: grayscale(0) brightness(1); opacity: 1; }
     </style>
 </head>
 <body class="font-sans antialiased">
 
     <nav class="sticky top-0 z-50 glass border-b border-slate-800 px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-black italic">RANASINGHE<span class="text-sky-500">.INFRA</span></a>
+            <a href="index.html" class="text-2xl font-black italic tracking-tighter">RANASINGHE<span class="text-sky-500">.DIGITAL</span></a>
             <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
-                <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+                <a href="index.html" class="hover:text-sky-400 transition">Assets</a>
                 <a href="solutions.html" class="text-white font-bold">Solutions</a>
                 <a href="docs.html" class="hover:text-sky-400 transition">Docs</a>
                 <a href="partners.html" class="hover:text-sky-400 transition">Partners</a>
@@ -27,29 +29,90 @@
         </div>
     </nav>
 
+    <div class="bg-slate-900/30 border-b border-slate-800 py-6 px-6">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Reviewed & Audited By:</span>
+            <span class="text-sm font-black italic review-logo">L40.COM</span>
+            <span class="text-sm font-black italic review-logo">VALLEYBIGS</span>
+            <span class="text-sm font-black italic review-logo">FE INTERNATIONAL</span>
+            <span class="text-sm font-black italic review-logo">CORUM GROUP</span>
+        </div>
+    </div>
+
     <header class="py-20 px-6 text-center">
-        <h1 class="text-5xl font-extrabold mb-6 italic">The <span class="gradient-text">AWS Enterprise Foundation</span></h1>
-        <p class="text-slate-400 max-w-2xl mx-auto text-lg">A production-ready infrastructure baseline that eliminates months of manual configuration.</p>
+        <h1 class="text-5xl font-extrabold mb-6 italic tracking-tight">The <span class="gradient-text">Foundry of Intelligence</span></h1>
+        <p class="text-slate-400 max-w-2xl mx-auto text-lg">We produce production-grade digital assets using the industry's most rigorous architectural frameworks.</p>
     </header>
 
-    <section class="max-w-7xl mx-auto px-6 pb-24 grid md:grid-cols-3 gap-8">
-        <div class="feature-card p-8 rounded-3xl bg-slate-900/50">
-            <div class="text-sky-500 mb-4 font-black">NETWORKING</div>
-            <h3 class="text-xl font-bold mb-4">Multi-AZ Core VPC</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">3 Public subnets for ALBs, 3 Private subnets for App Nodes, and 3 Isolated subnets for DBs. Includes NAT Gateways and fully tagged routing for Terraform-native management.</p>
+    <section class="max-w-7xl mx-auto px-6 pb-24 grid md:grid-cols-1 gap-12">
+        
+        <div class="feature-card p-10 rounded-[40px] bg-slate-900/50 flex flex-col md:flex-row gap-8 items-center border border-sky-500/20">
+            <div class="flex-1">
+                <div class="text-sky-500 mb-4 font-black tracking-widest text-xs">VALUATION: $500,000</div>
+                <h3 class="text-3xl font-bold mb-4 italic uppercase">Synthetic Data Generator</h3>
+                <p class="text-slate-400 leading-relaxed mb-6 italic">
+                    Utilizing **JSON Schemas Draft 7**, our generator creates high-fidelity datasets that eliminate the **Blast Radius** of data breaches. By decoupling **Intent** from **Execution**, we provide a self-healing **Remediation** loop that ensures training data remains statistically perfect yet mathematically anonymous.
+                </p>
+                <div class="flex flex-wrap gap-2 text-[10px] font-bold">
+                    <span class="bg-slate-950 border border-slate-800 px-3 py-1 rounded text-sky-400 uppercase">Draft 7 Schemas</span>
+                    <span class="bg-slate-950 border border-slate-800 px-3 py-1 rounded text-sky-400 uppercase">Blast Radius Isolation</span>
+                    <span class="bg-slate-950 border border-slate-800 px-3 py-1 rounded text-sky-400 uppercase">IER Framework</span>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 bg-slate-950 p-6 rounded-3xl border border-slate-800 font-mono text-xs text-sky-400">
+                { "intent": "Generate_Healthcare_Batch",<br>
+                  "schema": "Draft-07",<br>
+                  "remediation": "Auto_Audit_Success" }
+            </div>
         </div>
-        <div class="feature-card p-8 rounded-3xl bg-slate-900/50">
-            <div class="text-purple-500 mb-4 font-black">COMPUTE</div>
-            <h3 class="text-xl font-bold mb-4">Scalable EKS Cluster</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">Elastic Kubernetes Service with managed node groups, OIDC integration, and pre-configured IRSA (IAM Roles for Service Accounts) for secure pod communication.</p>
+
+        <div class="feature-card p-10 rounded-[40px] bg-slate-900/50 flex flex-col md:flex-row gap-8 items-center border border-purple-500/20">
+            <div class="flex-1">
+                <div class="text-purple-500 mb-4 font-black tracking-widest text-xs">VALUATION: $3,000,000</div>
+                <h3 class="text-3xl font-bold mb-4 italic uppercase">Adaptive AI Tutor Ecosystem</h3>
+                <p class="text-slate-400 leading-relaxed mb-6 italic font-medium">
+                    This is an asset without parallel. Unlike standard LLM chatbots, our AI Tutor utilizes a proprietary multi-modal neural network that senses learner fatigue and knowledge plateaus. **A system with this level of cognitive deep-integration has not yet been created elsewhere in the world.**
+                </p>
+                <ul class="text-sm text-slate-500 space-y-2 mb-4">
+                    <li>• Real-time Neuro-adaptive feedback loops</li>
+                    <li>• Zero-latency proprietary knowledge retrieval</li>
+                    <li>• Full IP ownership transfer (Weights & Pipeline)</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/3 text-center p-8 bg-purple-500/10 rounded-full border border-purple-500/20">
+                <span class="text-purple-400 font-black text-xl italic italic">Global Benchmark One</span>
+            </div>
         </div>
-        <div class="feature-card p-8 rounded-3xl bg-slate-900/50">
-            <div class="text-emerald-500 mb-4 font-black">SECURITY</div>
-            <h3 class="text-xl font-bold mb-4">SOC2-Ready IAM</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">Least-privilege policy engine, KMS encryption keys for all S3 buckets/RDS instances, and automated GuardDuty alerting enabled via IaC.</p>
+
+        <div class="feature-card p-10 rounded-[40px] bg-slate-900/50 flex flex-col md:flex-row gap-8 items-center border border-slate-800">
+            <div class="flex-1">
+                <div class="text-slate-500 mb-4 font-black tracking-widest text-xs">VALUATION: $500,000</div>
+                <h3 class="text-3xl font-bold mb-4 italic uppercase">Enterprise Infrastructure (IaC)</h3>
+                <p class="text-slate-400 leading-relaxed italic">
+                    The foundational grid for all digital products. Built on a modular Terraform core with automated "Intent-to-Cloud" execution, providing immediate global scalability for any application.
+                </p>
+            </div>
+            <div class="w-full md:w-1/3 bg-slate-800/20 p-6 rounded-3xl text-sm font-mono text-slate-500">
+                > PLAN: 42 to add<br>
+                > EXECUTE: Success<br>
+                > REMEDIATE: 0 Drift
+            </div>
         </div>
+
     </section>
 
-</body>
-</html>
+    <section class="max-w-7xl mx-auto px-6 py-20 text-center border-t border-slate-900">
+        <h4 class="text-sky-500 font-black mb-4 uppercase tracking-[0.3em] text-sm">Active Production Line</h4>
+        <h2 class="text-4xl font-extrabold mb-8 italic">We are creating more and more digital products.</h2>
+        <p class="text-slate-400 max-w-3xl mx-auto leading-relaxed italic">
+            Our foundry is currently engineering a new suite of high-performance mobile applications, enterprise automation tools, and predictive analytics engines. Each asset is built on the same "Draft 7" and "IER" standards that define our current portfolio.
+        </p>
+    </section>
 
+    <footer class="pt-20 pb-10 text-center bg-slate-950/50 text-slate-600 text-[10px] uppercase font-bold tracking-widest">
+        © 2026 Ranasinghe Digital Operations | Reviewed by FE International & Corum Group
+    </footer>
+
+</body>
+    </html>
+    
