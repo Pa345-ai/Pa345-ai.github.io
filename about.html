@@ -3,89 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vision & Leadership | Ranasinghe Infrastructure System</title>
+    <title>About Our Foundry | Ranasinghe Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #ffffff; color: #0f172a; line-height: 1.8; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-        .hero-section { background: linear-gradient(135deg, #020617 0%, #0f172a 100%); color: white; padding: 140px 20px; text-align: center; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
-        h2 { font-size: 1.8rem; font-weight: 800; margin-top: 50px; margin-bottom: 25px; color: #1e40af; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
-        .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin: 40px 0; }
-        .stat-card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 30px; border-radius: 12px; text-align: center; }
-        .stat-number { font-size: 2.8rem; font-weight: 900; color: #2563eb; display: block; }
-        .stat-label { font-size: 0.85rem; color: #64748b; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
-        
-        .ceo-vision-box { 
-            background: #0f172a; 
-            color: #f8fafc; 
-            padding: 60px; 
-            border-radius: 24px; 
-            margin-top: 60px; 
-            position: relative;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-        .quote-icon { font-size: 4rem; color: #3b82f6; opacity: 0.3; position: absolute; top: 20px; left: 30px; font-family: serif; }
-        
-        .bio-grid { display: grid; grid-template-columns: 1fr; gap: 40px; margin-top: 40px; }
-        p { margin-bottom: 20px; text-align: justify; color: #334155; font-size: 1.05rem; }
-        .ceo-signature { font-family: 'Georgia', serif; font-style: italic; font-size: 1.5rem; color: #3b82f6; margin-top: 20px; }
+        body { background-color: #020617; color: #f8fafc; line-height: 1.8; }
+        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-glow { background: radial-gradient(circle at center, rgba(56, 189, 248, 0.15) 0%, transparent 70%); }
+        h2 { color: #38bdf8; font-size: 1.75rem; font-weight: 800; margin-top: 4rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
     </style>
 </head>
-<body>
+<body class="font-sans antialiased">
 
-    <section class="hero-section">
-        <h1 class="text-6xl font-black tracking-tighter mb-6 uppercase">The Standard of <span class="text-blue-500">Excellence</span></h1>
-        <p class="text-xl text-slate-400 max-w-3xl mx-auto font-light">Empowering global startups with the architectural integrity required to scale from MVP to IPO.</p>
-    </section>
+    <nav class="sticky top-0 z-50 glass border-b border-slate-800 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black italic tracking-tighter">RANASINGHE<span class="text-sky-500">.DIGITAL</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="index.html" class="hover:text-sky-400 transition">Assets</a>
+                <a href="solutions.html" class="hover:text-sky-400 transition">Solutions</a>
+                <a href="about.html" class="text-white font-bold">About Us</a>
+                <a href="partners.html" class="hover:text-sky-400 transition">Partners</a>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container">
+    <header class="relative py-24 px-6 text-center hero-glow">
+        <div class="inline-block px-4 py-1 mb-6 border border-sky-500/30 rounded-full bg-sky-500/5 text-sky-400 text-xs font-bold tracking-widest uppercase">
+            Global Digital Asset Production
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black mb-8 italic tracking-tighter">Architecting <span class="gradient-text">Unrivaled Intelligence.</span></h1>
+        <p class="text-slate-400 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed">
+            From $500k infrastructure grids to $3.5M AI ecosystems, we provide the blueprints for the next generation of global industry.
+        </p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-24">
         
-        <div class="ceo-vision-box">
-            <div class="quote-icon">“</div>
-            <h2 style="color: #3b82f6; border: none; margin-top: 0; padding-top: 0;">A Message from our CEO</h2>
-            <p style="color: #cbd5e1; font-size: 1.2rem; line-height: 1.9; font-style: italic;">
-                "My vision for Ranasinghe Infrastructure System is simple yet transformative: I want to bridge the gap between 'startup speed' and 'enterprise security.' For too long, founders have been forced to choose between moving fast and staying secure. We are here to prove that you can do both. 
-                <br><br>
-                By providing 46-node, pre-hardened environments, we aren't just selling code; we are giving founders their time back. We are making startups better by ensuring their foundation is indestructible from day one."
+        <section class="glass p-10 rounded-[40px] mb-20 text-center border-sky-500/20">
+            <h2 class="mt-0">Our Mission: Solutions for Everyone</h2>
+            <p class="text-slate-300 text-lg leading-relaxed italic">
+                While we engineer high-ticket assets for institutional acquisition, our core philosophy is to provide scalable digital solutions for everyone. Whether you are a solo founder seeking a secure cloud foundation or a multinational corporation requiring a world-first AI Tutor, our production line is designed to bridge the gap between complex engineering and immediate business value.
             </p>
-            <div class="ceo-signature">Ruwanpurage Pawan Nimesh Ranasinghe</div>
-            <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 5px;">CEO & Lead Architect, Ranasinghe Infrastructure System</p>
+        </section>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2>What We Do</h2>
+                <p class="text-slate-400 mb-6">
+                    We are a digital product foundry specializing in the creation of high-value intellectual property. We don't just build software; we architect assets. Our production includes:
+                </p>
+                <ul class="space-y-4 text-slate-300 font-medium">
+                    <li class="flex items-start gap-3"><span class="text-sky-500">▹</span> <strong>Enterprise IaC:</strong> Automated global cloud foundations built on SOC2 standards.</li>
+                    <li class="flex items-start gap-3"><span class="text-sky-500">▹</span> <strong>Synthetic Intelligence:</strong> Privacy-first data generators using JSON Schemas Draft 7.</li>
+                    <li class="flex items-start gap-3"><span class="text-sky-500">▹</span> <strong>The AI Tutor:</strong> A multi-modal educational engine that is the first of its kind in the world.</li>
+                </ul>
+            </div>
+
+            <div class="space-y-8">
+                <div class="glass p-8 rounded-3xl border-slate-800">
+                    <h3 class="text-white font-black italic mb-2 uppercase text-sm tracking-widest">Industry Validation</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                        Our digital assets and financial structures have been reviewed and audited by the world’s leading M&A and technology valuation platforms.
+                    </p>
+                    <div class="flex flex-wrap gap-4 text-[10px] font-black text-sky-400 opacity-80">
+                        <span>L40.COM</span>
+                        <span>VALLEYBIGS</span>
+                        <span>FE INTERNATIONAL</span>
+                        <span>CORUM GROUP</span>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-3xl border-slate-800">
+                    <h3 class="text-white font-black italic mb-2 uppercase text-sm tracking-widest">Global Operations</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Headquartered in Ratnapura, Sri Lanka, we operate with a global-first mindset, providing architectural blueprints for Silicon Valley innovators and European enterprise leaders.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <h2>1. Engineering a New Paradigm</h2>
-        <p>Ranasinghe Infrastructure System (RIS) is a specialized engineering studio focused on the high-end orchestration of AWS environments. We recognized that the most successful SaaS platforms share a common secret: they never outgrow their initial architecture. Our mission is to provide that "Forever Architecture" as a turnkey asset.</p>
-        
-        <div class="stat-grid">
-            <div class="stat-card">
-                <span class="stat-number">46</span>
-                <span class="stat-label">Hardened Nodes</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number">2-Week</span>
-                <span class="stat-label">Time Saved</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number">Enterprise</span>
-                <span class="stat-label">Grade Security</span>
-            </div>
-        </div>
+        <section class="mt-20 border-t border-slate-900 pt-16">
+            <h2 class="text-center">The Ranasinghe Standard</h2>
+            <p class="text-slate-400 text-center max-w-3xl mx-auto leading-relaxed italic">
+                Every product we release utilizes our proprietary <strong>Intent-Execution-Remediation (IER)</strong> framework. This ensures that every digital asset we deliver is self-healing, statistically perfect, and ready for immediate deployment into high-stakes environments. We are continuously expanding our pipeline, creating more apps and intelligence tools to solve the world's most complex digital challenges.
+            </p>
+        </section>
 
-        <h2>2. Technical Pedigree</h2>
-        <p>Our lead engineering team, directed by our CEO, specializes in <strong>HashiCorp Terraform (HCL)</strong> and <strong>Amazon Web Services (AWS)</strong>. Every module we release is built to pass the most stringent security audits, including <strong>tfsec</strong> and <strong>Snyk</strong>. We utilize dual-layer encryption (KMS) and VPC Flow Log analysis to ensure that every byte of data is accounted for and protected.</p>
-
-        <h2>3. Global Impact</h2>
-        <p>From our headquarters in Ratnapura, Sri Lanka, we provide the architectural blueprints for the next wave of Silicon Valley innovators, European FinTechs, and Asian SaaS platforms. We operate with a "Zero-Trust" mindset, ensuring that our products meet the compliance needs of a globalized digital economy.</p>
-
-        <h2>4. Commitment to Founders</h2>
-        <p>When you invest in a Ranasinghe asset, you are securing the future of your company. Our $1,200 Enterprise Kits are designed for founders who refuse to settle for mediocre infrastructure. We provide the documentation, the security, and the scalability that allows you to focus 100% on your customers while we handle the cloud.</p>
-
-        <footer class="mt-20 pt-10 border-t border-slate-200 text-slate-500 text-sm">
-            © 2025 Ranasinghe Infrastructure System. <br>
-            Principal Operations: Ratnapura, Sri Lanka. <br>
-            Official Resellers: FastSpring / WarriorPlus / Tazapay.
+        <footer class="mt-32 pt-12 border-t border-slate-900 text-center">
+            <p class="text-slate-600 text-[10px] font-bold uppercase tracking-[0.3em] mb-4">
+                © 2026 Ranasinghe Digital Asset Infrastructure.
+            </p>
+            <p class="text-slate-700 text-[9px] uppercase">
+                Registered Operations: RUWANPURAGE PAVITHRA PARAMI RANASINGHE | Ratnapura, Sri Lanka.
+            </p>
         </footer>
-    </div>
+    </main>
 
 </body>
-</html>
-                                                           
+    </html>
+                
